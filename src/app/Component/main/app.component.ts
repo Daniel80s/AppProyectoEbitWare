@@ -2,7 +2,6 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 import { Cliente } from '../../Classes/Cliente';
 import { ListaClientesService } from '../../Services/ListaClientesClases-service/ListaClientes-service';
 import { ListaClientesApiService } from '../../Services/ListaClientesApi-service/ListaClientesApi.service';
-import {BsModalComponent} from 'ng2-bs3-modal/ng2-bs3-modal';
 
 @Component({
   moduleId: module.id,
@@ -13,8 +12,8 @@ export class AppComponent implements OnInit {
 
   clientes: Array<Cliente> = [];
   cliente : Cliente = new Cliente(0,'','','','','',0,0,0,0);
-  @ViewChild('modal')
-  modal:BsModalComponent;
+
+
 
   //Api
   //Provider
