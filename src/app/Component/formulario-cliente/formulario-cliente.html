@@ -1,0 +1,44 @@
+<form method="POST" (ngSubmit)="submit()" #listaCompraForm="ngForm">
+    <div>
+
+        <div>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre" name="txtNombre" [(ngModel)]="model.Nombre" />
+        </div>
+        <div>
+            <label for="txtApellidos">Apellidos</label>
+            <input type="text" id="txtApellidos" name="txtApellidos" [(ngModel)]="model.Apellidos" />
+        </div>
+        <div>
+            <label for="txtUsuario">Usuario</label>
+            <input type="text" id="txtUsuario" name="txtUsuario" [(ngModel)]="model.Nombre_Usuario" />
+        </div>
+        <div>
+            <label for="txtEmail">Email</label>
+            <input type="text" id="txtEmail" name="txtEmail" [(ngModel)]="model.Correo_Electronico" />
+        </div>
+        <div>
+            <label for="txtContrasena">Contraseña</label>
+            <input type="text" id="txtContrasena" name="txtContrasena" [(ngModel)]="model.Contrasena" />
+        </div>
+        <div>
+            <label for="txtEdad">Edad</label>
+            <input type="number" id="txtEdad" name="txtEdad" [(ngModel)]="model.Edad" />
+        </div>
+        <div>
+            <label for="txtEstatura">Estatura</label>
+            <input type="number" id="Estatura" name="Estatura" [(ngModel)]="model.Estatura" />
+        </div>
+        <div>
+            <label for="txtPeso">Peso</label>
+            <input type="number" id="txttxtPeso" name="txtPeso" [(ngModel)]="model.Peso" />
+        </div>
+        <div>
+            <label for="txtGEB">GEB</label>
+            <input type="number" id="txttxtGEB" name="txtGEB" [(ngModel)]="model.GEB" />
+        </div>
+        <div>
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,33 @@
+<table class="w3-table w3-bordered w3-striped">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Usuario</th>
+          <th>Correo Electronico</th>
+          <th>Contraseña</th>
+          <th>Edad</th>
+          <th>Estatura</th>
+          <th>Peso</th>
+          <th>Geb</th>
+          <th>Acciones</th>
+          
+        </tr>   
+        <tr *ngFor="let item of clientes; let i = index">
+            
+            <td>{{item.Cliente_ID}}</td>
+            <td>{{item.Nombre}}</td>
+            <td>{{item.Apellidos}}</td>
+            <td>{{item.Nombre_Usuario}}</td>
+            <td>{{item.Correo_Electronico}}</td>
+            <td>{{item.Contrasena}}</td>
+            <td>{{item.Edad}}</td>
+            <td>{{item.Estatura}}</td>
+            <td>{{item.Peso}}</td>
+            <td>{{item.GEB}}</td>
+            <td>
+                <button (click)="modificarCliente(item)"><i>Modificar</i></button>
+            </td>
+            
+        </tr>
+    </table>
