@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Cliente } from '../../Classes/Cliente';
 import { ListaClientesService } from '../../Services/ListaClientesClases-service/ListaClientes-service';
 import { ListaClientesApiService } from '../../Services/ListaClientesApi-service/ListaClientesApi.service';
