@@ -1,17 +1,31 @@
-<div>
-    <div>
-        <h3>Nuevo Producto</h3>
-    </div>
+
+<modal #modal>
+        <modal-header [show-close]="true">
+            <h4>Nuevo Cliente</h4>
+        </modal-header>
+        <modal-body>
+            <formulario-producto (onsubmit)="guardar($event)" [model]="producto"></formulario-producto>
+            <modal-body>
+                <modal-footer>
+                    <button type="button" data-dsmiss="modal" (click)="modal.dimiss()"></button>
+                </modal-footer>
+            </modal-body>
+        </modal-body>
+    </modal>
     <div>
         <div>
-            <div>
-                <formulario-cliente (onsubmit)="guardar($event)"></formulario-cliente>
-            </div>
+            <h3>Nuevo Cliente</h3>
         </div>
         <div>
             <div>
-                <listado-clientes [clientes]="clientes"></listado-clientes>
+                <div>
+                    <formulario-cliente (onsubmit)="guardar($event)"></formulario-cliente>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <listado-clientes [clientes]="clientes"></listado-clientes>
+                </div>
             </div>
         </div>
     </div>
-</div>
